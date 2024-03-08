@@ -1,4 +1,4 @@
-export default async function Home() {
+export default async function Page() {
   const res = await fetch("https://jsonplaceholder.typicode.com/users/1");
   const data = await res.json();
   const jsonData = JSON.stringify(data, null, 2);

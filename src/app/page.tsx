@@ -4,8 +4,10 @@ export default async function Home() {
   const jsonData = JSON.stringify(data, null, 2);
   return (
     <main className="flex justify-center items-center h-screen">
-      <div className="w-96">{jsonData}</div>
-      {/* <article className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      {/* plain text */}
+      {/* <div className="w-96">{jsonData}</div>   */}
+
+      <article className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <p className="text-lg font-bold mb-4">User Information</p>
         <div className="mb-4">
           <p className="text-sm">ID: {data.id}</p>
@@ -33,7 +35,7 @@ export default async function Home() {
           <p className="text-sm">Catch Phrase: {data.company.catchPhrase}</p>
           <p className="text-sm">BS: {data.company.bs}</p>
         </section>
-      </article> */}
+      </article>
     </main>
   );
 }
